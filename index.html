@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+<title>NBA Three-Point Frequency vs Winning %: Chart and Observationsaaa</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+<style>
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+}
+body { 
+    font-family: "Open Sans", Arial, sans-serif; 
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 940px !important;
+    padding: 0px 20px 0px 20px;
+    margin: 32px auto 32px auto;
+    box-sizing: border-box;
+}
+svg { font: 9px "Open Sans", Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1><font size="5">Current Top 11 All-Time NBA 3P Shooters (plus Curry) vs 3P%</h1><font>
+<font size="2">
+
+<font>
+<div>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<svg id="chart" width="850" height="580" />
+<link rel="stylesheet" type="text/css" href="grapher.css" />
+
+<script src="grapher.js"></script>
+<script>
+//Calls the json document
+d3.json("Top11PlusCurry.json", function (data) {
+	
+	debugger;
+	
+	//Creates the MootionChart from the grapher.js document
+	var chart = new Grapher.MotionChart(document.getElementById("chart"));
+	chart.dataSource = data;
+	
+	chart.labelData = "Name";
+	chart.xData = "3P%" ;
+  	chart.yData = "3PSum";
+	chart.radiusData = "Active";
+	chart.colorData ="Active" ;
+	chart.startTime = new Date("1992/10/01");
+	chart.endTime = new Date("2016/04/13");
+	
+	
+	
+	chart.draw();
+	
+	chart.startTransition();
+	
+	
+});
+</script>
+</div>
+
+<p><b><font size="2"> - The chart is implemented via D3.js by modifying Lutz Roeder's <a href="http://www.lutzroeder.com/html5">Grapher.MotionChart</a>  <br>- A blue dot represents an active player, the dot changes color when the player retires <br>- 3P% below .26 or above .475 are shown at the extreme ends of the x-axis<br>- Click and drag the time slider to pause and change the date </b><p>  
+<p><p>
+
+
+</body>
+</html>
