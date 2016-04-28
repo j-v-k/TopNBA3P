@@ -107,7 +107,7 @@ def Key_Date_Value_Dict_Creator(Name,resultDict):
     '''Returns List of small Lists of [date,value] pairings by key name'''
     dateValueDict = {}
     for dicti in resultDict[Name]:
-        #print dicti
+        
         for key in dicti:
               if key <> 'Date' and key in dateValueDict:
                   dateValueDict[key] += [[dicti['Date'], float(dicti[key])]]
