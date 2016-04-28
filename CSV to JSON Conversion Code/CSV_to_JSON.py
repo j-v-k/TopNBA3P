@@ -1,8 +1,8 @@
 
 '''
-***EDIT THIS LIST WITH YOUR REQUIRED JSON KEY NAMES***'''
-keys = ['Name','Date' , '3P%', '3PSum']
-
+***EDIT THIS LIST WITH THE COL NAMES FROM ***'''
+chosenKeys = ['csvCol1', 'csvCol2']
+keys = ['Date','Name'] + chosenKeys
 '''
 ***CSV INPUT FILE PATH***'''
 FileName = "C:\Users\James\Documents\Top11\Small Example.csv" 
