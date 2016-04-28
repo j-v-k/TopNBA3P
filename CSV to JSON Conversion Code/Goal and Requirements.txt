@@ -1,13 +1,15 @@
 Goal:
-	Take csv file and change to appropriate Json Format for Grapher.Motion Chart
-	Takes a CSV file with a format like:
+	Take .csv file and change to the appropriate .json format for Grapher.Motion Chart
+	
+	
+	The code takes a CSV file with a format like:
 		Name,Date,3P,3PA,3PSum,3PASum,3P%,Active,Dummy,DeleteFilter
 		Reggie Miller,11/10/1987,0,1,1,5,0.2,1,6,4
 		Jason Terry,4/12/2008,1,5,1217,3150,0.386349206,1,4,3
 		Kobe Bryant,4/15/2008,1,5,1086,3192,0.340225564,1,1,3
 		Kobe Bryant,10/27/2008,1,5,1086,3192,0.340225564,1,dummy,1
 	
-	Choose the Columns you want to use("Name", "Date","3P%", "3PSum" in this Case)
+	You choose the Columns you want to use("3P%", "3PSum" in this Case)
 
 	And outputs a Json file with a format like:
 		[{"Name": "Jason Terry",
@@ -23,6 +25,6 @@ Goal:
 
 
 CSV Requirements:
-        *'Name' and 'Date' must be included in keys List and in the CSV
+        *Columns for 'Name' and 'Date' must be included in the .csv file
         *'Date' must be in Month/Day/Year format
         *Every column value chosen besides Date and Name must be an integer or float, no strings
