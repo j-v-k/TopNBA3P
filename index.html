@@ -29,7 +29,7 @@ svg { font: 9px "Open Sans", Arial, sans-serif; }
 </style>
 </head>
 <body>
-<h1><font size="5">Current Top 11 All-Time NBA 3P Shooters (plus Curry) vs 3P%</h1><font>
+<h1><div class="contentcontainer med left" style="margin-left: 55px;"><font size="4">Top 11 Career NBA Three-Point Shooters (plus Curry) vs Three-Point % Over Time</h1></div><font>
 <font size="2">
 
 <font>
@@ -51,7 +51,7 @@ d3.json("Top11PlusCurry.json", function (data) {
 	
 	chart.labelData = "Name";
 	chart.xData = "3P%" ;
-  	chart.yData = "3PSum";
+  	chart.yData = "Total 3P";
 	chart.radiusData = "Active";
 	chart.colorData ="Active" ;
 	chart.startTime = new Date("1992/10/01");

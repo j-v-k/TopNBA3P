@@ -233,7 +233,7 @@ var Grapher;
                 g.append("text").attr("text-anchor", "start").attr("dy", -8).text(this._colorData);
             }
         };
-		//Regulates the size of th radius slider, removed by me
+		//Regulates the size of the radius slider, removed by jvk
         MotionChart.prototype.createRadiusAxis = function () {
             var w = this._width * 0.25;
             var x = this._margin.left + ((this._colorDomain) ? (0.32 * this._width) : 0);
@@ -426,7 +426,7 @@ var Grapher;
                     var x = self._xScale(self.computeValue(data, self._xData, date));
                     var y = self._yScale(self.computeValue(data, self._yData, date));
                     var r = self.computeValue(data, self._radiusData, date);
-					//Controlls the size of the dots
+					//Controls the size of the dots
                     var radius = 6;
                     var color = self.hasValue(data, self._colorData, date) ? self._colorScale(self.computeValue(data, self._colorData, date)) : "#fff";
                     var textPosition = 1 + (1.1 * radius);
