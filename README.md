@@ -1,4 +1,4 @@
-This repository contains the files for the interactive chart made to track the Top 11 current(as of the end of the 2015-16 Season) Three-Point Shooters, plus Stephen Curry, over time.
+This repository contains the files for the interactive D3 chart made to track the Top 11 career(as of the end of the 2015-16 Season) Three-Point Shooters, plus Stephen Curry, over time.
 
 The vizualization can be seen here:
 http://bl.ocks.org/j-v-k/raw/dbef2619e93cfc0f6b98a3a82a676296/
