@@ -29,7 +29,8 @@ svg { font: 9px "Open Sans", Arial, sans-serif; }
 </style>
 </head>
 <body>
-<h1><div class="contentcontainer med left" style="margin-left: 75px;"><font size="4">Top 11 Career NBA Three-Point Shooters (plus Curry) vs Three-Point % </h1></div><font>
+<h1><div class="contentcontainer med left" style="margin-left: 30px;"><font size="4">Total Three-Point Shots Made vs Three-Point % <br>
+Top 11 Career NBA Three-Point Shooters (plus Curry)</h1></div><font>
 <font size="2">
 
 <font>
@@ -50,8 +51,8 @@ d3.json("Top11PlusCurry.json", function (data) {
 	chart.dataSource = data;
 	
 	chart.labelData = "Name";
-	chart.xData = "3P%" ;
-  	chart.yData = "Total 3P";
+	chart.xData = "3P %" ;
+  	chart.yData = "Total 3P Made";
 	chart.radiusData = "Active";
 	chart.colorData ="Active" ;
 	chart.startTime = new Date("1992/10/01");
