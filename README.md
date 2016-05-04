@@ -6,3 +6,5 @@
 
 #### I also added the Python code which I created and to convert the .csv files into the particular form of .json recognized by the Grapher.Motion chart. 
 
+#### All data is scraped from basketball-reference.com
+
