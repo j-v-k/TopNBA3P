@@ -1,7 +1,7 @@
 
 '''
 ***EDIT THIS LIST WITH THE COL NAMES FROM ***'''
-chosenKeys = ['csvCol1', 'csvCol2']
+chosenKeys = ['3PASum', '3P%']
 keys = ['Date','Name'] + chosenKeys
 '''
 ***CSV INPUT FILE PATH***'''
@@ -18,24 +18,17 @@ def getYear(x):
 
 def getMonth(x):
    '''returns month from 'Date' value for formatting as two characters'''
-   
-   firstSlash = x['Date'].index("/")
-   
-   if len(x['Date'][:firstSlash]) < 2:
-       month = '0' + x['Date'][:1]
-       return month
-   else:
-       month = x['Date'][:2]
-       return  month
-
+   Month = int(x['Date'][:1])
+   print Month
+   return "{0:0=2d}".format(Month)
     
 def getDay(x):
     '''returns day from 'Date' value as two characters'''  
     firstSlash = x['Date'].index("/")
-    if len(x['Date'][firstSlash+1:-5]) == 1:
-       return '0' + x['Date'][firstSlash+1:-5]
-    else:
-       return x['Date'][firstSlash+1:-5]
+    Day =  int(x['Date'][firstSlash+1:-5])
+    return "{0:0=2d}".format(Day)
+
+
 
 
 def get_key_pos(FileName, keys):
