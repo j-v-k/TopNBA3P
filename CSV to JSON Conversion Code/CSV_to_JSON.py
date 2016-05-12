@@ -52,7 +52,7 @@ def get_key_pos(FileName, keys):
 def Pre_Result_List_Creator(FileName, key_Pos, keys):
     import csv
     """takes each row from the csv as a dictionary and puts all the dictionaries in a list of dicts"""
-    #rowKeyCount = 0
+    
     preResultDict = {}
     
     reader = csv.reader(open(FileName))
