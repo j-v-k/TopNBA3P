@@ -1,6 +1,6 @@
 
 '''
-***EDIT THIS LIST WITH THE COL NAMES FROM ***'''
+***EDIT THIS LIST WITH THE COL NAMES YOU WANT FROM YOUR CSV ***'''
 chosenKeys = ['3PASum', '3P%']
 keys = ['Date','Name'] + chosenKeys
 '''
